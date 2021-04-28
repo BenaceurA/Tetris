@@ -33,9 +33,7 @@ namespace Tetris
         protected override void Initialize()
         {
             block = new Grid.Cell[4];
-            blocks = new Grid.Cell[7,4];
-
-            
+            blocks = new Grid.Cell[7,4];  
 
             blocks[0, 3] = new Grid.Cell(5, 0, Color.Red, true);     //
             blocks[0, 0] = new Grid.Cell(5,-1, Color.Red, true);     //
@@ -56,6 +54,7 @@ namespace Tetris
             blocks[3, 1] = new Grid.Cell(6,0, Color.Red, true);        ////
             blocks[3, 2] = new Grid.Cell(5,-1, Color.Red, true);
             blocks[3, 3] = new Grid.Cell(6,-1, Color.Red, true);
+
 
             elapsed = 0;
             piece.x = 5;
